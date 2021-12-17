@@ -4,6 +4,6 @@ namespace ProjectName.Models
 {
   public class Project 
   {
-    gg no re
+    gg no read
   }
 }
