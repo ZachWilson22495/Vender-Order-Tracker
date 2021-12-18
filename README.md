@@ -1,7 +1,3 @@
-[![Language][language-shield]][language-url]
-[![Language][languageH-shield]][languageH-url]
-[![MIT License][license-shield]][license-url]
-
 # Project Name
 
 #### This is a C# web application ...
