@@ -1,58 +1,54 @@
-[![Language][language-shield]][language-url]
-[![Language][languageH-shield]][languageH-url]
-[![MIT License][license-shield]][license-url]
+# _Vendor/Order Tracker_
 
-# Project Name
+#### By **Zach Wilson**
 
-#### This is a C# web application ...
-
-#### _By Paige Tiedeman_
+#### _A C# application built to keep track of shipment orders to different vendors_
 
 ## Technologies Used
 
+* HTML
 * C#
-* .NET 5.0
-* ASP.NET Core MVC
-* MSTest
+* .NET
 
 ## Description
 
-This web application takes users inputs of items and places them in a UL list using RESTful routing.
+_At Pierre's Bakery, there are two things for sale. Bread, and Pastries. Enjoy my interactive prompt where Pierre will ask you what you would like to buy, clarifies prices and deals, and then calculates your total for you_
 
-## Installation Requirements
+## Setup/Installation Requirements
 
-* _Clone or download the zip file of this repository to your desktop_
-* _Navigate into the top level directory_
-* _Open in your code editor_
-* _Commit and push your .gitignore file to your repo_
-* _Make sure to have .NET 5.0 installed_
-* _Run `$ dotnet restore` to install bin & obj folders_
-* _Run `$ dotnet test` in the test folder to see the passed tests_
-
-
-## Steps To Use
-* _In your terminal navigate into ProjectName.Solution/ProjectName_
-* _Run `$ dotnet build` to build the site_
-* _Run `$ dotnet run` to start the live server_
-* _Click either button to add or see the list_
-* _After clicking add item put in your inputs and hit submit to reveal the list!_
+* Clone this repository to your Desktop
+* Open 'Vendor-Order-Tracker' in your code editor
+* Use your terminal to navigate to 'Vendor-Order-Tracker/VendorOrderTracker' and run 'dotnet restore' in your terminal to install bin & obj folders.
+* Use your terminal to navigate to 'Vendor-Order-Tracker/VendorOrderTracker.Tests' and run 'dotnet test' in your terminal to see if all tests passed.
+* Use your terminal to navigate back to 'Vendor-Order-Tracker/VendorOrderTracker' and run 'dotnet run' to activate application.
+* Answer the questions provided to you by the application 
 
 ## Known Bugs
 
-* _N/A_
+Currently no known bugs.
 
 ## License
 
-MIT: See Badge at top for Info
-Copyright (c) 2021 Paige Tiedeman
+MIT License
 
-## Contact Information
+Copyright (c) [2021] [Zachary Wilson]
 
-_Paige Tiedeman @ github.com/paigetiedeman_  
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-[license-shield]: https://img.shields.io/badge/License-MIT-blue
-[license-url]: https://opensource.org/licenses/MIT
-[language-shield]: https://img.shields.io/badge/Language-C%23-red
-[language-url]: https://docs.microsoft.com/en-us/dotnet/csharp/
-[LanguageH-shield]: https://img.shields.io/badge/Language-HTML-blueviolet
-[LanguageH-url]: https://developer.mozilla.org/en-US/docs/Web/HTML
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+### Feel free to fix/edit all contained code to your liking. If you encounter and problems, contact me at zwilson22495@gmail.com
