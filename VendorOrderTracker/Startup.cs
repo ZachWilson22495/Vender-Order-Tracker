@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace ProjectName
+namespace VendorOrderTracker
 {
   public class Startup
   {
@@ -25,15 +25,12 @@ namespace ProjectName
 
     public void Configure(IApplicationBuilder app)
     {
-      app.UseDeveloperExceptionPage();
       app.UseRouting();
 
       app.UseEndpoints(routes =>
       {
         routes.MapControllerRoute("default", "{controller=Home}/{action=Index}/{id?}");
       });
-
-      app.UseStaticFiles();
       
       app.Run(async (context) =>
       {
