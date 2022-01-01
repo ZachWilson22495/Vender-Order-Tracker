@@ -20,19 +20,37 @@ namespace VendorOrderTracker.Controllers
       return View();
     }
 
+    [HttpPost("/vendors")]
+    public ActionResult Create(string name, string description)
+    {
+      Vendor myVendor = new Vendor(name, description);
+      return RedirectToAction("Index");
+    }
+
     [HttpGet("/vendors/{id}")]
     public ActionResult Show(int id)
     {
+      Dictionary<string, object> model = new Dictionary<string, object>();
       Vendor foundVendor = Vendor.Find(id);
-      return View(foundVendor);
+      List<Order> vendorOrders = foundVendor.Orders;
+      model.Add("vendor", foundVendor);
+      model.Add("orders", vendorOrders);
+      return View(model);
     }
 
-    [HttpPost("/vendors")]
-    public ActionResult Create(string name, string description, string collection)
+    [HttpPost("/vendors/{vendorId}/orders")]
+    public ActionResult Create(int vendorId, string orderName, string orderDescription, string orderPrice, string orderDate)
     {
-      Vendor myVendor = new Vendor(name, description, collection);
-      return RedirectToAction("Index");
+      Dictionary<string, object> model = new Dictionary<string, object>();
+      Vendor foundVendor = Vendor.Find(vendorId);
+      Order newOrder = new Order(orderName, orderDescription, orderPrice, orderDate);
+      foundVendor.AddOrder(newOrder);
+      List<Order> vendorOrders = foundVendor.Orders;
+      model.Add("order", vendorOrders);
+      model.Add("vendor", foundVendor);
+      return View("Show", model);
     }
+
 
     [HttpPost("/vendors/delete")]
     public ActionResult DeleteAll()

@@ -12,7 +12,7 @@
 
 ## Description
 
-__
+_A simple webpage built for 'Pierre's Bakery.' A simple place to keep track of different vendors the bakery sells their goods to as well as a record of all shipments made to each vendor. Set up a vendor and a description, and then you'll be able to add as many orders to that vendor as you please._
 
 ## Setup/Installation Requirements
 

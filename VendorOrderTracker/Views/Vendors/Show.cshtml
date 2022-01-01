@@ -1,9 +1,17 @@
-<h1>@Model.Name details: </h1>
+@using VendorOrderTracker.Models;
 
-<h2>@Model.Description</h2>
-<h2>@Model.Price</h2>
-<h2>@Model.Date</h2>
+<h2>@Model["vendor"].Name</h2>
+<h4>@Model["vendor"].Description</h4>
 
-<a href='/orders/new'>Add another order to your list</a>
-<h2>________________________________</h2>
-<a href='/orders'>View all items</a>
+<h3>Their order history is as follows:</h3>
+
+<ol>
+@foreach (Order order in @Model["orders"])
+{
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.OrderId'>@order.OrderName</a></li>
+}
+</ol>
+
+<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
+<p><a href='/vendors'>Return to list of Vendors</a></p>
+<p><a href='/'>Return to Main Menu</a></p>
